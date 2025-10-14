@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+<div class="container">
+    <form action="">
+        <h2>Currency converter</h2>
+        <p>Enter Amount</p>
+        <input type="text" value="100" placeholder="Enter amount" class="amount">
+        <div class="select-country">
+            
+<div class="selection">
+    <div class="from">
+        <P>From</P>
+            <img src="https://flagsapi.com/NP/flat/64.png" alt="flag">
+            <select name="from" id="select-country-from">
+               
+            </select>
+            </div>
+            <img src="exchange.png" alt="Exchange Icon" class="exchange-icon">
+            <div class="to">
+            <p>To</p>
+            <img src="https://flagsapi.com/US/flat/64.png" alt="">
+            <select name="to" id="select-country-to">
+              
+            </select>
+</div>
+            </div>              
+        </div>
+
+ <p class="display">1USD=RS132</p>
+        <button>Get Exchange Rate</button>
+    </form>
+</div>
+    <script src="countrycode.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
