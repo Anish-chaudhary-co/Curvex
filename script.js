@@ -45,7 +45,7 @@ const display = document.querySelector(".display");
         alert("Please! Enter higher value than 1");
         return;
     }
-     let getexchangeURL =`https://v6.exchangerate-api.com/v6/40b48f97f44797f4ae8ab115/latest/${fromcurren}`;
+     let getexchangeURL =`https://v6.exchangerate-api.com/${apikey}/latest/${fromcurren}`;
     let response =await fetch(getexchangeURL);
    let data = await response.json();
    let rate = data.conversion_rates;
@@ -146,4 +146,5 @@ const display = document.querySelector(".display");
 //  }).catch((error)=>{
 //     console.log(error);
     
+
 //  })
